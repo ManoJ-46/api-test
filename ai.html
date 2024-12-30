@@ -96,7 +96,7 @@
         <div id="response"></div>
     </div>
     <script>
-    require('dotenv').config();
+    const API_KEY = process.env.PERPLEXITY_API_KEY || 'your-fallback-key';
 
     async function sendPrompt() {
         const promptElement = document.getElementById('prompt');
